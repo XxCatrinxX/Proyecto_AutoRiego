@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="95px"
+        android:layout_weight="1"
+        android:background="#00BCD4" />
+
+
+    <TextView
+        android:id="@+id/fecha_hora"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="45px"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_weight="1"
+        android:text="Conexión con el sistema."
+        android:textColor="#000000"
+        android:layout_marginTop="35px"/>
+
+    <LinearLayout
+        android:id="@+id/buscador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/dispositivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BUSCAR"
+            app:backgroundTint="#03A9F4"
+            app:icon="@android:drawable/ic_menu_search"
+            app:iconPadding="10px"
+            app:strokeColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buscador"
+        android:layout_marginTop="85px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/conectar"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONECTAR"
+            app:backgroundTint="#31DF38" />
+
+        <Button
+            android:id="@+id/desconectar"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DESCONECTAR"
+            app:backgroundTint="#FA0F0F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/encendido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/encender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ENCENDER"
+            app:backgroundTint="#05BF0D" />
+
+        <Button
+            android:id="@+id/apagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="APAGAR"
+            app:backgroundTint="#CD0808" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/semana1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lunes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lunes"
+            app:backgroundTint="@color/purple" />
+
+        <Button
+            android:id="@+id/martes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Martes"
+            app:backgroundTint="@color/purple" />
+
+        <Button
+            android:id="@+id/miercoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Miercoles"
+            app:backgroundTint="@color/purple" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/semana2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semana1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jueves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jueves"
+            app:backgroundTint="@color/purple" />
+
+
+        <Button
+            android:id="@+id/viernes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Viernes"
+            app:backgroundTint="@color/purple" />
+
+        <Button
+            android:id="@+id/sabado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sabado"
+            app:backgroundTint="@color/purple" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/semana3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semana2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/domingo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Domingo"
+            app:backgroundTint="@color/purple" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semana3"
+        android:layout_marginTop="40dp"
+        android:background="#E8E8E8"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:hint="HORAS"
+            android:textColorHint="#575656"/>
+
+        <EditText
+            android:id="@+id/minutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:hint="MINUTOS"
+            android:textColorHint="#575656"/>
+
+        <EditText
+            android:id="@+id/segundos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:hint="SEGUNDOS"
+            android:textColorHint="#575656"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/programar_riego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="10px"
+        android:padding="40px"
+        android:text="Programar Riego" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo de riego: "
+        android:layout_below="@+id/semana3"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encendido"
+        android:layout_marginTop="100px"
+        android:layout_weight="1"
+        android:text="Dias de la semana a regar"
+        android:textColor="#040404" />
+
+</RelativeLayout>
